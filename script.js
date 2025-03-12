@@ -3,17 +3,17 @@ const productos = [
     {
         nombre: "Producto 1",
         precioOriginal: 100,
-        imagen: "url_imagen_producto1.jpg" // Reemplaza con la URL de la imagen
+        imagen: "https://via.placeholder.com/150" // Reemplaza con la URL de la imagen
     },
     {
         nombre: "Producto 2",
         precioOriginal: 200,
-        imagen: "url_imagen_producto2.jpg" // Reemplaza con la URL de la imagen
+        imagen: "https://via.placeholder.com/150" // Reemplaza con la URL de la imagen
     },
     {
         nombre: "Producto 3",
         precioOriginal: 300,
-        imagen: "url_imagen_producto3.jpg" // Reemplaza con la URL de la imagen
+        imagen: "https://via.placeholder.com/150" // Reemplaza con la URL de la imagen
     }
 ];
 
@@ -26,9 +26,9 @@ function cargarProductos() {
         divProducto.classList.add('producto');
         divProducto.innerHTML = `
             <h3>${producto.nombre}</h3>
-            <img src="${producto.imagen}" alt="${producto.nombre}" style="width:100px;">
-            <p>Precio original: $${producto.precioOriginal}</p>
-            <p>Precio modificado: $${precioModificado.toFixed(2)}</p>
+            <img src="${producto.imagen}" alt="${producto.nombre}">
+            <p>Precio original: <span style="text-decoration: line-through;">$${producto.precioOriginal}</span></p>
+            <p><strong>Precio especial: $${precioModificado.toFixed(2)}</strong></p>
             <button>Añadir al carrito</button>
         `;
         listaProductos.appendChild(divProducto);
