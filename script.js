@@ -3,7 +3,7 @@ const productos = [
     {
         nombre: "Producto 1",
         precioOriginal: 100,
-        imagen: "https://via.placeholder.com/150" // Reemplaza con la URL de la imagen
+        imagen: "https://github.com/mraffaeta/tienda-online/blob/main/SAMSUNG-65-Class-DU6900-Crystal-UHD-4K-Smart-TV-UN65DU6900FXZA_76dee158-ffd0-4079-a123-3e5fddf78b2f.6719440f3a664032aa339e2f7841256a.webp" // Reemplaza con la URL de la imagen
     },
     {
         nombre: "Producto 2",
